@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAMS | Registration</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="image-section">
+        <div class="image-wrapper">
+          <img src="./assets/images/login-page-images/gradient.png" alt="NAMS LASU banner background" />
+        </div>
+        <div class="content-container">
+          <h1 class="section-heading">
+            Nigerian Association of Microbiology Students
+            <span>LASU CHAPTER.</span>
+          </h1>
+          <p class="section-paragraph">Brought to you by The Claritas.</p>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-wrapper">
+          <div class="logo-container">
+            <a href="#" class="logo-link">
+              <img src="./assets/images/registration-page-images/nams-logo.jpg" alt="NAMS Logo" />
+            </a>
+          </div>
+          <div class="logo-container">
+            <a href="#" class="logo-link">
+              <img src="./assets/images/registration-page-images/lasu-logo.png" alt="LASU Logo" />
+            </a>
+          </div>
+
+          <h2>Create Your Account 👋🏻</h2>
+          <p>NAMS LASU E-VOTING PLATFORM.</p>
+
+          <form class="vote-form" id="registration-form" novalidate>
+            <div class="input-container">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" autocomplete="off" required />
+              </div>
+              <div class="form-group">
+                <label for="matric-no">Matriculation Number</label>
+                <input type="text" id="matric-no" autocomplete="off" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required />
+              </div>
+            </div>
+
+            <div id="form-message" style="margin-bottom: 1rem; font-weight: 500;"></div>
+
+            <button type="submit" class="login-btn">Register</button>
+
+            <div class="alt-action" role="group" aria-label="Alternative action">
+              <span class="alt-text">Already have an account?</span>
+              <a href="./public/Login-mobile/index.html" class="register-link">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts.js" defer></script>
+  </body>
+</html>

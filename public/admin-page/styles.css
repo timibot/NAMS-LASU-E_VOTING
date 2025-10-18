@@ -1,0 +1,108 @@
+/* Import the same font as the main site */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Define the color variables from your main stylesheet */
+:root {
+    --text-dark: hsl(240, 54%, 15%);
+    --text-light: hsl(242, 18%, 64%);
+    --primary: hsl(222, 98%, 60%);
+    --primary-lighter: hsl(240, 33%, 86%);
+    --primary-gradient: linear-gradient(to right, green, yellow);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f9ff; /* Matching main site background */
+    color: var(--text-dark);
+    margin: 0;
+    padding: 2rem;
+}
+
+.admin-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(20, 24, 64, 0.06);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--primary-lighter);
+    padding-bottom: 0.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--primary-lighter); /* Matching input style */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 150ms ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #16164d; /* Matching focus style */
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-gradient); /* Using the main gradient */
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 150ms ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.message {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+}

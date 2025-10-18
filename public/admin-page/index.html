@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMS-LASU-ADMIN PANEL</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Election Admin Panel</h1>
+
+        <div class="form-card">
+            <h2>Add New Position</h2>
+            <form id="add-position-form">
+                <div class="form-group">
+                    <label for="position-title">Position Title (e.g., President)</label>
+                    <input type="text" id="position-title" required>
+                </div>
+                <button type="submit">Create Position</button>
+            </form>
+            <div id="position-message" class="message"></div>
+        </div>
+
+        <div class="form-card">
+            <h2>Add New Candidate</h2>
+            <form id="add-candidate-form">
+                <div class="form-group">
+                    <label for="candidate-name">Candidate's Full Name</label>
+                    <input type="text" id="candidate-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="candidate-position">Select Position</label>
+                    <select id="candidate-position" required>
+                        <option value="">-- Loading positions... --</option>
+                    </select>
+                </div>
+                <button type="submit">Add Candidate</button>
+            </form>
+            <div id="candidate-message" class="message"></div>
+        </div>
+    </div>
+    <script src="./scripts.js" defer></script>
+</body>
+</html>
